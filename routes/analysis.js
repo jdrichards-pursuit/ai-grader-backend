@@ -435,11 +435,17 @@ function generatePrompt(codeFiles, rubric) {
           "criterion": "criterion name",
           "score": "weighted score (numeric)",
           "justification": "detailed justification",
-          "recommendations": ["recommendation1", "recommendation2"]
+          "recommendations": ["recommendation1", "recommendation2"] 
         }
       ],
       "overallAnalysis": "overall analysis text"
     }
+
+    Important:
+    For the value of the recommendations key:
+    1. Point out syntax errors, logical errors, and other issues.
+    2. Add as many array elements/recommendations as you have with a limit of 10.
+    3. Point out the specific lines of code that need to be changed.
 
     Use this specific rubric for your analysis:
     ${rubric.map(item => `
