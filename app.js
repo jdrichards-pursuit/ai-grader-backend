@@ -14,7 +14,7 @@ app.use(express.json());
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Welcome to Accelerator Track One Grader");
+  res.send("Welcome to Pull Request Grader");
 });
 
 app.use("/api/analysis", analysisRouter);
